@@ -36,6 +36,8 @@ public class EventoController {
     	.map(evento -> {
     		evento.setNome(newEvento.getNome());
     		evento.setLocal(newEvento.getLocal()); 
+    		evento.setData(newEvento.getData());
+    		evento.setHorario(newEvento.getHorario());
     		return repository.save(evento);
     	})
     	.orElseGet(() -> {
