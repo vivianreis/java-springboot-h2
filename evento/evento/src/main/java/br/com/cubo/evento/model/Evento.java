@@ -13,6 +13,9 @@ public class Evento {
 	private Integer id;
 	private String nome;
 	private String local;
+	private String data;
+	private String horario;
+	
 	public String getData() {
 		return data;
 	}
@@ -28,9 +31,6 @@ public class Evento {
 	public void setHorario(String horario) {
 		this.horario = horario;
 	}
-
-	private String data;
-	private String horario;
 	
 	public String getNome() {
 		return nome;
